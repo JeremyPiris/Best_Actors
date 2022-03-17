@@ -1,0 +1,211 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    color: gray;
+  }
+
+ul{
+    color: gray;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* ---------------- INDEX --------------------*/
+
+.body-index {
+    background-color: cadetblue;
+}
+
+.index-title {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.index-container {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: #333;
+    background-color: cadetblue;
+}
+
+.slider-container {
+    height: 90vh;
+    display: inline-flex;
+    overflow: hidden;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+    cursor: grab;
+}
+
+.slide {
+    max-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    user-select: none;
+}
+
+.index-img {
+    display: block;
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.24);
+    border: solid 2px gray;
+    transition: ease all .5s;
+    margin-bottom: 30px;
+}
+
+.grabbing {
+    cursor: grabbing;
+}
+
+.grabbing .slide img {
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 585px){
+    .index-img {
+        height: 250px;
+        width: 250px;
+        transition: ease all .5s;
+    }
+}
+
+
+
+/* ---------------- NAVIGATION --------------------*/
+
+.menu{
+    display: flex;
+    z-index: 10;
+    justify-content: center;
+    height: 200px;
+    background-color: grey;
+    transition: ease all .5s;
+}
+
+.menu a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.img-menu{
+    display: block;
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.24);
+    border: solid 2px gray;
+    opacity: 0.7;
+    transition: ease all .5s;
+}
+
+.img-menu:hover{
+    opacity: 1;
+    height: 150px;
+    width: 150px;
+    transition: ease all .5s;
+}
+
+#en-cours{
+    opacity: 1;
+    height: 150px;
+    width: 150px;
+    transition: ease all .5s;
+}
+
+@media screen and (max-width: 1275px){
+    .img-menu{
+        height: 75px;
+        width: 75px;
+        transition: ease all .5s;
+    }
+    .menu{
+        height: 150px;
+        transition: ease all .5s;
+    }
+    #en-cours{
+        opacity: 1;
+        height: 125px;
+        width: 125px;
+        transition: ease all .5s;
+    }
+    .img-menu:hover{
+        opacity: 1;
+        height: 125px;
+        width: 125px;
+        transition: ease all .5s;
+    }
+}
+
+/* ---------------- GRILLE --------------------*/
+
+
+.section-principale{
+    padding: 0 20px;
+    float: left;
+    width: 65%;
+}
+
+.filmo{
+    float: right;
+    width: 25%;
+    padding: 0 20px;
+    border-left: 1px solid grey;
+}
+
+
+/* ----------------- SECTION KNOWN-FOR --------------------*/
+
+.known-for{
+    display: flex;
+    justify-content:space-between;
+    height: 300px;
+    background-color: aquamarine;
+    padding: 15px 10%;
+    margin: 20px auto;
+
+}
+
+.known-div p{
+    text-align: center;
+    color: black;
+}
+
+.known-img{
+    display: block;
+    object-fit: cover;
+    height: 250px;
+    width: 160;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.24);
+    transition: ease all .5s;
+}
+
+
+
+/* ----------------- SECTION FILMO --------------------*/
+
+
+
